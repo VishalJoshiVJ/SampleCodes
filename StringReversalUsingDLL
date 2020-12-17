@@ -56,7 +56,7 @@ void reverseString(){
     start = front;
     end = rear;
     //Reverses the doubly linked list first
-    while(start != end){
+    while(start != end && start->next != end){
     strcpy(temp,start->string);
     strcpy(start->string,end->string);
     strcpy(end->string,temp);
