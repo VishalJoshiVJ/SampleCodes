@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define SIZE 20
 
 //Structure required for doubly linked list
 struct Node{
-    char string[20];
+    char string[SIZE];
     struct Node *next;
     struct Node *prev;
 };
@@ -52,7 +53,7 @@ void createString(){
 
 //Function to Reverse the strings
 void reverseString(){
-    char temp[20];
+    char temp[SIZE];
     struct Node *start,*end;
     start = front;
     end = rear;
